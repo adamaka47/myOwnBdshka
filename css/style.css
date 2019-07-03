@@ -1,0 +1,123 @@
+.header {
+	padding-top: 40px;
+}
+
+.main_title {
+	font-size: 24px;
+	margin: 0;
+}
+
+
+.modal-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	z-index: 4;
+}
+
+.modal-proj {
+	position: relative;
+	width: 250px;
+	border: 2px solid #af8;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #af8;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.modal-proj-close {
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+
+.form-slider {
+	width: 700px;
+	height: inherit;
+	/*background-color: grey;*/
+	-webkit-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+
+.form-slider-left {
+	width: 50%;
+	float: left;
+	height: inherit;
+/*	background: purple;
+*/	padding: 15px;
+}
+
+.form-slider-right {
+	width: 50%;
+	float: left;
+	height: inherit;
+	max-height: 440px;
+	overflow-y: scroll;
+/*	background: green;
+*/	padding: 15px;
+}
+
+.left_link, .right_link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.signup-modal {
+	width: 370px;
+}
+
+.form-overflow {
+	overflow: hidden;
+}
+
+@media (max-width: 420px) {
+	.signup-modal {
+		width: 280px;
+	}
+	.form-slider-left {
+		width: 35%;
+		padding: 0;
+	}
+	.form-slider-right {
+		padding-top: 0;
+		padding-bottom: 0;
+		max-height: 360px;
+		width: 50%;
+		padding-right: 40px;
+		padding-left: 120px;
+	}
+	input[type=text]:not(.browser-default) {
+		margin: 0;
+	}
+	.row .col {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.form-slider {
+		width: 750px;
+	}
+	.form-slider .row {
+		margin: 0;
+	}
+	#rules {
+		padding: 4px;
+	}
+	#sign-up .modal-proj {
+		padding: 5px;
+	}
+}
+
